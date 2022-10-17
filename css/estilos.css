@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: rgba(87, 87, 87, 0.993);
+}
+.menu{
+    text-align: center;
+    font-family: 'Raleway';
+    margin-top: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: rgba(61, 60, 60, 0.993);
+}
+.menu ul{
+    display: inline;
+    list-style: none;
+}
+.menu ul li{
+    display: inline;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-right: 2rem;
+    text-transform: uppercase;
+    display: inline;
+    text-align: center;
+}
+a:hover{
+    background-color: #2c2c2c;
+}
+.menu ul li ul {
+    display: none;
+}
+.menu ul li a:hover + ul, .menuCSS3 ul li ul:hover {
+    display: block;
+}
+a{
+    text-decoration: solid;
+    color: #030202;
+}
+h1{
+    font-family: 'Oswald', cursive;
+    font-size: 4rem;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+}
+body{
+    background-color: rgba(31, 30, 30, 0.993);
+}
+.Info h2{
+    text-align: left;
+    font-weight: bold;
+}
+.Info{
+    font-family: 'Raleway';
+    margin: 2rem;
+    padding: 1rem;
+    background-color: rgba(87, 87, 87, 0.993);
+    font-size: 120%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 30px;
+}
+.cartelera{
+    margin: 2rem;
+    padding: 1rem;
+    font-family: 'Raleway';
+    display: flex;
+    justify-content: space between;
+}
+.portal{
+    width: 33%;
+    padding: 0.1rem;
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: inline;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(87, 87, 87, 0.993);
+    font-size: 120%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 30px;
+}
+.portal img{         
+    width: 80%;
+    height: auto;
+    margin: 1rem;
+    border: 4px solid black;
+}
+.personaje
+{
+    margin: 2rem;
+    padding: 1rem;
+    font-family: 'Raleway';
+    display: flex;
+    justify-content: space between;
+}
+.infoPersonaje
+{
+    width: 98%;
+    padding: 0.1rem;
+    margin: auto;
+    display: inline;
+    text-align: left;
+    background-color: rgba(87, 87, 87, 0.993);
+    font-size: 120%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 30px;
+}
+.imgPersonaje{
+    width: 50%;
+    height: auto;
+    margin: 1rem;
+    border: 4px solid black;
+}
+footer{
+    padding: 1%;
+    background-color: rgba(87, 87, 87, 0.993);
+    font-family: 'Raleway';
+    text-align: center;
+    font-size: 120%;
+}
+@media screen and (max-width: 576px){
+    h1{
+        font-size: 2rem;
+    }
+    .Info{
+        margin: 1rem;
+        padding: 0.5rem;
+        font-size: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 15px;
+    }
+    .portal{
+        width: 33%;
+        height: 33%;
+        padding: 0.1rem;
+        margin-top: 0.1rem;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        display: inline;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: rgba(87, 87, 87, 0.993);
+        font-size: 120%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 30px;
+    }
+    .portal img{         
+        width: 80%;
+        height: auto;
+        margin: 1rem;
+        border: 4px solid black;
+    }
+    footer{
+        padding: 1%;
+        background-color: rgba(87, 87, 87, 0.993);
+        font-family: 'Raleway';
+        text-align: center;
+        font-size: 80%;
+    }
+}
