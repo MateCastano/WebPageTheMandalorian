@@ -61,7 +61,7 @@ body{
     padding: 1rem;
     font-family: 'Raleway';
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .portal{
     width: 33%;
@@ -82,6 +82,37 @@ body{
     border: 4px solid black;
 }
 .portal img{         
+    width: 80%;
+    height: auto;
+    margin: 1rem;
+    border: 4px solid black;
+}
+.carteleraInfo{
+    margin: 2rem;
+    padding: 1rem;
+    font-family: 'Raleway';
+    display: flex;
+    justify-content:center;
+}
+.portalInfo{
+    width: 33%;
+    padding: 0.1rem;
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: inline;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(87, 87, 87, 0.993);
+    font-size: 120%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 30px;
+    border: 4px solid black;
+}
+.portalInfo img{         
     width: 80%;
     height: auto;
     margin: 1rem;
@@ -124,6 +155,10 @@ body{
     text-align: center;
     border: 4px solid black;
     display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 30px;
 }
 footer{
     padding: 1%;
