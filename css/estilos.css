@@ -1,23 +1,27 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 header{
     background-color: rgba(87, 87, 87, 0.993);
 }
-.menu{
+nav{
     text-align: center;
     font-family: 'Raleway';
     margin-top: 1%;
     padding-top: 1%;
     padding-bottom: 1%;
     background-color: rgba(61, 60, 60, 0.993);
+    border-top: 1%;
+    border-bottom: 1%;
+    border: 4px solid black;
 }
-.menu ul{
+nav ul{
     display: inline;
     list-style: none;
 }
-.menu ul li{
+nav ul li{
     display: inline;
     font-weight: bold;
     font-size: 1.2rem;
@@ -29,6 +33,12 @@ header{
 a{
     text-decoration: solid;
     color: #030202;
+}
+a:hover{
+    color: dimgray;
+}
+.icon{
+    display: none;
 }
 h1{
     font-family: 'Oswald', cursive;
@@ -87,14 +97,14 @@ body{
     margin: 1rem;
     border: 4px solid black;
 }
-.carteleraInfo{
+.carteleraTemp{
     margin: 2rem;
     padding: 1rem;
     font-family: 'Raleway';
     display: flex;
     justify-content:center;
 }
-.portalInfo{
+.portalTemp{
     width: 33%;
     padding: 0.1rem;
     margin-top: 0.1rem;
@@ -112,11 +122,12 @@ body{
     border-bottom-left-radius: 30px;
     border: 4px solid black;
 }
-.portalInfo img{         
+.portalTemp img{         
     width: 80%;
     height: auto;
     margin: 1rem;
     border: 4px solid black;
+    padding: auto;
 }
 .personaje
 {
@@ -166,6 +177,7 @@ footer{
     font-family: 'Raleway';
     text-align: center;
     font-size: 120%;
+    display: block;
 }
 footer img{
     padding-top: 3rem;
@@ -175,10 +187,17 @@ footer img{
     max-width: 2.5rem;
 }
 @media screen and (max-width: 576px){
-    h1{
+.icon{
+    margin-top: 0%;
+    float: left;
+    display: block;
+    height: 0.1rem;
+    width: 1%;
+}
+h1{
         font-size: 2rem;
-    }
-    .Info{
+}
+.Info{
         margin: 1rem;
         padding: 0.5rem;
         font-size: 100%;
@@ -186,36 +205,134 @@ footer img{
         border-top-right-radius: 15px;
         border-bottom-right-radius: 5px;
         border-bottom-left-radius: 15px;
-    }
-    .portal{
-        width: 33%;
-        height: 33%;
+}
+.cartelera{
+        margin: 1rem;
+        padding: 0.5rem;
+        font-family: 'Raleway';
+        display: inline-block;
+        justify-content: center;
+}
+.portal{
+        width: 100%;
+        height: 100%;
         padding: 0.1rem;
-        margin-top: 0.1rem;
-        margin-bottom: 1rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        display: inline;
+        margin: 0.1rem;
+        display: block;
         text-transform: uppercase;
         text-align: center;
         background-color: rgba(87, 87, 87, 0.993);
-        font-size: 120%;
+        font-size: 90%;
         border-top-left-radius: 10px;
         border-top-right-radius: 30px;
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 30px;
-    }
-    .portal img{         
+        justify-content:space-between;
+}
+.portal img{         
         width: 80%;
-        height: auto;
+        height: 100%;
         margin: 1rem;
         border: 4px solid black;
-    }
-    footer{
+        text-align: center;
+}
+.personaje
+{
+    margin: 2rem;
+    padding: 1rem;
+    font-family: 'Raleway';
+    display: block;
+}
+.infoPersonaje
+{
+    width: 98%;
+    padding: 1%;
+    margin: auto;
+    margin-bottom: 2%;
+    display: block;
+    text-align: left;
+    background-color: rgba(87, 87, 87, 0.993);
+    font-size: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 30px;
+    border: 4px solid black;
+}
+.infoPersonaje h2{
+    text-align: center;
+    text-decoration:underline;
+    text-transform: uppercase;
+}
+.infoPersonaje img{
+    width:100%;
+    height: auto;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+    border: 4px solid black;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 30px;
+}
+.carteleraTemp{
+    margin: 1rem;
+    padding: 0.5rem;
+    font-family: 'Raleway';
+    display: inline-block;
+    justify-content: center;
+}
+.portalTemp{
+    width: 100%;
+    height: 100%;
+    padding: 0.1rem;
+    margin: 0.1rem;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(87, 87, 87, 0.993);
+    font-size: 90%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 30px;
+    justify-content:space-between;
+}
+.portalTemp img{         
+    width: 80%;
+    height: 100%;
+    margin: 1rem;
+    border: 4px solid black;
+    text-align: center;
+}
+footer{
         padding: 1%;
         background-color: rgba(87, 87, 87, 0.993);
         font-family: 'Raleway';
         text-align: center;
         font-size: 80%;
-    }
+        bottom: 0;
+}
+footer img{
+    max-width: 4rem;
+    padding-top: 0px;
+    margin-right: 0px;
+}
+nav{
+    width: 100%;
+}
+ul{
+    display: none;
+}
+nav.responsive ul{
+    display: block;
+}
+nav.responsive ul li{
+    display: block;
+    text-align: center;
+    padding: 1rem;
+}
 }

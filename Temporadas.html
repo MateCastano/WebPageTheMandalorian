@@ -20,25 +20,26 @@
 		<div>
 			<h1><a href="index.html">THE MANDALORIAN</h1>
 		</div>
-		<nav class="menu">
+		<nav id="menu">
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="Imagenes/cascoMenu.png" alt="menu" class="fa fa-bars"><p>MENU</p></a> 
 			<ul>
 				<li><a href="Ultimas Noticias.html">Ultimas noticias</a></li>
 				<li><a href="#">Temporadas</a></li>
 				<li><a href="#">Criticas y notas</a></li>
 				<li><a href="Personajes.html">Personajes</a></li>
 				<li><a href="#">Contacto</a></li>
-				<li><a href="#">Galeria</li>
+				<li><a href="#">Galeria</a></li>
 			</ul>
 		</nav>		
 	</header>
-	<section class="carteleraInfo">
-		<article class="portalInfo">
+	<section class="carteleraTemp">
+		<article class="portalTemp">
 			<div>
 				<a href="Temporada 1.html"><img src="Imagenes/ImagenEpi2.jpg" alt=""></a>
 				<h3><a href="Temporada 1.html">TEMPORADA 1</a></h3>
 			</div>
 		</article>
-		<article class="portalInfo">
+		<article class="portalTemp">
 			<div>
 				<a href="Temporada 2.html"><img src="Imagenes/Bobba Fett.png" alt=""></a>
 				<h3><a href="Temporada 2.html">TEMPORADA 2</a></h3>
@@ -64,5 +65,15 @@
 			<p><br>by Mateo Castaño<br>Derechos reservados para Disney Inc.</p>
 		</div>
     </footer>
+	<script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu");
+          if (x.className === "") {
+            x.className += "responsive";
+          } else {
+            x.className = "";
+          }
+}
+    </script>
 </body>
 </html>

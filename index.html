@@ -18,14 +18,15 @@
 <body>
 	<header>
 		<h1><a href="index.html">THE MANDALORIAN</h1>
-        <nav class="menu">
-        	<ul>
+        <nav id="menu">
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="Imagenes/cascoMenu.png" alt="menu" class="fa fa-bars"><p>MENU</p></a> 
+			<ul>
         		<li><a href="Ultimas Noticias.html">Ultimas noticias</a></li>
         		<li><a href="Temporadas.html">Temporadas</a></li>
         		<li><a href="#">Criticas y notas</a></li>
         		<li><a href="Personajes.html">Personajes</a></li>
         		<li><a href="#">Contacto</a></li>
-				<li><a href="#">Galeria</li>
+				<li><a href="#">Galeria</a></li>
 			</ul>
         </nav>
 	</header>
@@ -76,5 +77,15 @@
 			<p><br>by Mateo Castaño<br>Derechos reservados para Disney Inc.</p>
 		</div>
     </footer>
+	<script type="text/javascript">
+        function myFunction() {
+          var x = document.getElementById("menu");
+          if (x.className === "") {
+            x.className += "responsive";
+          } else {
+            x.className = "";
+          }
+}
+    </script>
 </body>
 </html>

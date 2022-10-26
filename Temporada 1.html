@@ -18,14 +18,15 @@
 <body>
 	<header>
 		<h1><a href="index.html">THE MANDALORIAN</h1>
-        <nav class="menu">
+        <nav id="menu">
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="Imagenes/cascoMenu.png" alt="menu" class="fa fa-bars"><p>MENU</p></a> 
         	<ul>
         		<li><a href="Ultimas Noticias.html">Ultimas noticias</a></li>
         		<li><a href="Temporadas.html">Temporadas</a></li>
         		<li><a href="#">Criticas y notas</a></li>
         		<li><a href="Personajes.html">Personajes</a></li>
         		<li><a href="#">Contacto</a></li>
-				<li><a href="#">Galeria</li>
+				<li><a href="#">Galeria</a></li>
 			</ul>
         </nav>
 	</header>
@@ -33,6 +34,7 @@
 		<article class="infoPersonaje">
 			<div>
 				<h2>Temporada 1</h2>
+				<img src="Imagenes/ImagenEpi1.jpg" alt="Temporada 1">
 				<h3><br>Episodio 1</h3>
 				<p><br>Cinco años después de la caída del Imperio, Greef Karga recibe su última 
 					recompensa por parte de un cazatesoros mandaloriano. Al terminar, este 
@@ -131,24 +133,34 @@
 					para derribar la nave. Este consigue escapar y reunirse con el niño.</p>
 			</div>
 		</article>
-	<footer>
-		<div class="Redes">
-			<a href="https://www.instagram.com/themandalorian" target="_blank">
-				<img src="Imagenes/igLogo.png" alt="instagram">
-			</a>
-			<a href="https://twitter.com/themandalorian" target="_blank">
-				<img src="Imagenes/twLogo.png" alt="twitter">
-			</a>
-			<a href="https://www.youtube.com/c/StarWars" target="_blank">
-				<img src="Imagenes/ytLogo.png" alt="youtube">
-			</a>
-			<a href="https://www.facebook.com/themandaloriannet/" target="_blank">
-				<img src="Imagenes/facebookLogo.png" alt="facebook">
-			</a>
-		</div>
-		<div>
-			<p><br>by Mateo Castaño<br>Derechos reservados para Disney Inc.</p>
-		</div>
-    </footer>
+		<footer>
+			<div class="Redes">
+				<a href="https://www.instagram.com/themandalorian" target="_blank">
+					<img src="Imagenes/igLogo.png" alt="instagram">
+				</a>
+				<a href="https://twitter.com/themandalorian" target="_blank">
+					<img src="Imagenes/twLogo.png" alt="twitter">
+				</a>
+				<a href="https://www.youtube.com/c/StarWars" target="_blank">
+					<img src="Imagenes/ytLogo.png" alt="youtube">
+				</a>
+				<a href="https://www.facebook.com/themandaloriannet/" target="_blank">
+					<img src="Imagenes/facebookLogo.png" alt="facebook">
+				</a>
+			</div>
+			<div>
+				<p><br>by Mateo Castaño<br>Derechos reservados para Disney Inc.</p>
+			</div>
+		</footer>
+		<script type="text/javascript">
+			function myFunction() {
+			  var x = document.getElementById("menu");
+			  if (x.className === "") {
+				x.className += "responsive";
+			  } else {
+				x.className = "";
+			  }
+	}
+		</script>
 </body>
 </html>
