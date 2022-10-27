@@ -287,6 +287,32 @@ body{
     display: inline-block;
 }
         /*CONTACTO*/
+
+.contacto{
+    margin: 2rem;
+    padding: 1rem;
+    font-family: 'Raleway';
+    display: flex;
+    justify-content: center;
+}
+.portalContacto{
+    width: 33%;
+    padding: 0.1rem;
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem; 
+    display: inline;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(185, 178, 178, 0.993);
+    font-size: 120%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 30px;
+    border: 4px solid black;
+}        
 form label{
     font-family: 'Oswald';
     font-size: 2rem;
@@ -301,6 +327,7 @@ textarea{
 button{
     width: 25%;
     height: 25%;
+    margin-bottom: 1rem;
 }
         /*FOOTER*/
 
@@ -319,11 +346,25 @@ footer img{
     max-width: 2.5rem;
 }
 @media screen and (max-width: 576px){
-.icon{
-    float: left;
-    display: block;
-    height: 0.1rem;
-}
+    .icon{
+        margin-top: 3%;
+        margin-left: 2%;
+        margin-right: 420px;
+        margin-bottom: 2%;
+        float: left;
+        display: block;        
+        padding: 2.5%;
+        background-color: #4e4e4e93;
+        border-radius: 75px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;        
+    }
+    .icon p{
+        font-size: 1rem;
+        text-align: center;
+        color:rgb(17, 17, 17);
+        font-weight: bolder; 
+    }
 h1{
     font-size: 2rem;
 }
@@ -332,15 +373,10 @@ h1{
     margin-bottom: 0rem;
     padding: 0.5rem;
     font-size: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 15px;
 }
 .cartelera{
     margin: 1rem;
     padding: 0.2rem;
-    font-family: 'Raleway';
     display: inline-block;
     justify-content: center;
 }
@@ -353,12 +389,7 @@ h1{
     display: block;
     text-transform: uppercase;
     text-align: center;
-    background-color: rgba(185, 178, 178, 0.993);
     font-size: 90%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 30px;
     justify-content:center;
 }
 .portal img{         
@@ -384,12 +415,7 @@ h1{
     margin: 0.2rem;
     display: block;
     text-align: left;
-    background-color: rgba(185, 178, 178, 0.993);
-    font-size: 90%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 30px;
+    font-size: 100%;
     justify-content:space-between;
 }
 .infoPersonaje h2{
@@ -405,12 +431,7 @@ h1{
     margin-top: 1%;
     margin-bottom: 1%;
     text-align: center;
-    border: 2px solid black;
     display: block;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 30px;
 }
 
         /*TEMPORADA*/
@@ -419,13 +440,11 @@ h1{
 {
     margin: 1rem;
     padding: 1rem;
-    font-family: 'Raleway';
     display: block;
 }
 .carteleraTemp{
     margin: 1rem;
     padding: 0.5rem;
-    font-family: 'Raleway';
     display: inline-block;
     justify-content: center
 }
@@ -436,12 +455,7 @@ h1{
     margin: 0.2rem;
     display: block;
     text-align: left;
-    background-color: rgba(185, 178, 178, 0.993);
-    font-size: 90%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 30px;
+    font-size: 100%;
     justify-content:space-between;
 }
 .portalTemp img{         
@@ -451,12 +465,7 @@ h1{
     margin-top: 1%;
     margin-bottom: 1%;
     text-align: center;
-    border: 2px solid black;
     display: block;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 30px;
 }
  
 .infoTemporada
@@ -467,13 +476,7 @@ h1{
     margin-bottom: 2%;
     display: block;
     text-align: left;
-    background-color: rgba(185, 178, 178, 0.993);
     font-size: 110%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 30px;
-    border: 4px solid black;
 }
 .infoTemporada h2{
     text-align: center;
@@ -493,12 +496,7 @@ h1{
     margin-top: 1%;
     margin-bottom: 1%;
     text-align: center;
-    border: 4px solid black;
     display: block;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 30px;
 }
 
         /*GALERIA*/
@@ -510,18 +508,70 @@ h1{
     display: flex;
     justify-content: center;
 }
-        /*GALERIA*/
+.galeriaMuestra{
+    width: 100%;
+    height: 100%;
+    padding: 0.1rem;
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: inline;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 120%;
+}
 .imgGaleria{
     width: 85%;
 }
+
+        /*CONTACTO*/
+.contacto{
+    margin: 1rem;
+    padding: 1rem;
+    font-family: 'Raleway';
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.portalContacto{
+    width: 100%;
+    height: max-content;
+    padding: 0.1rem;
+    margin: 0.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(185, 178, 178, 0.993);
+    font-size: 120%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 30px;
+    border: 4px solid black;
+}
+form label{
+    font-family: 'Oswald';
+    font-size: 1.5rem;
+    margin-top: 1rem ;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+textarea{
+    width: 50%;
+    height: auto;
+}
+button{
+    width: 25%;
+    height: 25%;
+    margin-bottom: 1rem;
+}
+       
         /*FOOTER*/
+
 footer{
     padding: 1%;
-    background-color: rgba(87, 87, 87, 0.993);
-    font-family: 'Raleway';
     text-align: center;
     font-size: 80%;
-    bottom: 0;
 }
 footer img{
     max-width: 4rem;
