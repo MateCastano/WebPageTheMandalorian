@@ -17,9 +17,9 @@
 </head>
   <body background="Imagenes/fondo.jpg">
     <header id="cielo">
-		<h1><a href="index.html">THE MANDALORIAN</h1>
+		<a href="index.html"><h1>THE MANDALORIAN</h1></a>
         <nav id="menu">
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="Imagenes/cascoMenu.png" alt="menu" class="fa fa-bars"></a> 
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="Imagenes/iconMenu.png" alt="menu" class="fa fa-bars"></a>	 
 			<ul>
         		<li><a href="Ultimas Noticias.html">Ultimas noticias</a></li>
         		<li><a href="Temporadas.html">Temporadas</a></li>
@@ -29,6 +29,29 @@
 			</ul>
         </nav>
 	</header>
+    <section class="cartelera">
+        <article class="portal">
+            <div>
+                <form action="#" method="post">
+                    <label for="name">Nombre:</label>
+                    <div class="input">
+                        <input type="text" id="name" name="user_name" placeholder="Luke Skywalker" required="true">
+                    </div>
+                    <label for="mail">Correo electrónico:</label>
+                    <div class="input">
+                        <input type="email" id="mail" name="user_mail" placeholder="AnakinSkywitto@tattoine.com" required="true">
+                    </div>
+                    <label for="msg">Mensaje:</label>
+                    <div class="input">
+                        <textarea id="msg" name="user_message" placeholder="Introduzca su mensaje" required="true"></textarea>
+                    </div>
+                    <div class="boton">
+                        <button type="submit">Enviar</button>
+                    </div>                    
+                </form>
+            </div>
+        </article>
+    </section>>
 <footer>
     <div class="Redes">
         <a href="https://www.instagram.com/themandalorian" target="_blank">
