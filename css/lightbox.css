@@ -73,7 +73,7 @@ body.lb-disable-scrolling {
   width: 32px;
   height: 32px;
   margin: 0 auto;
-  background: url(../Imagenes/Galeria/icons/close.png) no-repeat;
+  background: url() no-repeat;
 }
 
 .lb-nav {
